@@ -1,0 +1,32 @@
+server:
+  http_port: 8000
+  wss_port: 8443
+  cert_file: "./certs/server.crt"
+  key_file: "./certs/server.key"
+
+log:
+  base_dir: "./data/logs"
+  max_retain_days: 30
+  clean_interval_minutes: 60
+
+auth:
+  username: admin
+  password: "123456"
+  jwt_secret: "loghub-jwt-secret-key-2024"
+
+apps:
+  - id: "app-web-frontend"
+    name: "Web前端应用"
+    description: "主站前端应用日志"
+  - id: "app-api-gateway"
+    name: "API网关"
+    description: "API网关服务日志"
+  - id: "app-user-service"
+    name: "用户服务"
+    description: "用户微服务日志"
+  - id: "app-order-service"
+    name: "订单服务"
+    description: "订单微服务日志"
+  - id: "app-payment-service"
+    name: "支付服务"
+    description: "支付微服务日志"
