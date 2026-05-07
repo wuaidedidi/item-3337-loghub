@@ -4,4 +4,8 @@ backend/data/
 backend/certs/
 data/
 certs/
+loghub
+certgen
+start.sh
+/config.yaml
 .DS_Store
